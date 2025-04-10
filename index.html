@@ -675,15 +675,37 @@
         <div class="app-showcase">
           <div class="app-header">
             <h3 class="app-title">Edu Nourish Smart School</h3>
-            <p class="app-description">
-              Edu Nourish Smart School is an innovative smart school application that leverages AI to create a fully intelligent educational environment. 
-              It supports schools in automating and optimizing every aspect of the learning experience—from tracking student performance and personalizing education, 
-              to promoting student health through smart monitoring systems. 
-              The app enhances communication between teachers, students, and parents, ensuring a connected and responsive learning ecosystem. In addition, it offers seamless 
-              online payment features and real-time Google Maps integration to simplify school-related logistics, with more advanced features on the horizon to further enhance the smart school experience. 
-              These upcoming features aim to
-              continue revolutionizing school management and student care, ensuring a more efficient and personalized educational journey.
-            </p>
+            <p class="app-description" id="description">
+  Edu Nourish Smart School is an innovative smart school application that leverages AI to create a fully intelligent educational environment. 
+  It supports schools in automating and optimizing every aspect of the learning experience—from tracking student performance and personalizing education, 
+  to promoting student health through smart monitoring systems. 
+  <span id="moreText" style="display:none;">
+    The app enhances communication between teachers, students, and parents, ensuring a connected and responsive learning ecosystem. In addition, it offers seamless 
+    online payment features and real-time Google Maps integration to simplify school-related logistics, with more advanced features on the horizon to further enhance the smart school experience. 
+    These upcoming features aim to continue revolutionizing school management and student care, ensuring a more efficient and personalized educational journey.
+  </span>
+  <span id="dots">...</span>
+  <a href="javascript:void(0);" onclick="showMore()" id="showMoreLink">Show more</a>
+</p>
+
+<script>
+  function showMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("moreText");
+    var showMoreLink = document.getElementById("showMoreLink");
+    
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      dots.style.display = "none";
+      showMoreLink.innerHTML = "Show less";
+    } else {
+      moreText.style.display = "none";
+      dots.style.display = "inline";
+      showMoreLink.innerHTML = "Show more";
+    }
+  }
+</script>
+
             <div class="tech-tags">
               <span class="tech-tag">Flutter</span>
               <span class="tech-tag">Dart</span>
