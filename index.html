@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Hamdy | Flutter Developer</title>
+  
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
   <style>
     :root {
       --primary: #2196F3;
@@ -76,6 +80,13 @@
       color: var(--primary);
       border: 5px solid rgba(255, 255, 255, 0.3);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     h1 {
@@ -201,9 +212,8 @@
       padding: 60px 0;
     }
 
-    /* Add extra space between header and portfolio section */
     #portfolio {
-      margin-top: 40px; /* Adjust this value as needed */
+      margin-top: 40px;
     }
 
     section {
@@ -432,157 +442,6 @@
       margin-bottom: 10px;
       color: var(--primary-dark);
     }
-    .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--bg-light);
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Important to clip the image within the circle */
-    border: 5px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.profile-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-}
-
-    /* Modal for screenshots */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      overflow: auto;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .modal.show {
-      opacity: 1;
-    }
-
-    .modal-content {
-      position: relative;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      padding: 20px;
-    }
-
-    .modal-image-container {
-      position: relative;
-      max-height: 85vh;
-      margin-bottom: 15px;
-    }
-
-    .modal-image {
-      max-height: 85vh;
-      max-width: 90vw;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-      border-radius: 15px;
-      transform: scale(0.9);
-      transition: transform 0.3s ease;
-    }
-
-    .modal.show .modal-image {
-      transform: scale(1);
-    }
-
-    .modal-caption {
-      color: white;
-      font-size: 18px;
-      margin-top: 15px;
-      text-align: center;
-    }
-
-    .close {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-
-    .close:hover {
-      color: var(--accent);
-    }
-
-    .modal-prev,
-    .modal-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 20px;
-      user-select: none;
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.3s ease;
-    }
-
-    .modal-prev:hover,
-    .modal-next:hover {
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-
-    .modal-prev {
-      left: 30px;
-    }
-
-    .modal-next {
-      right: 30px;
-    }
-
-    .thumbnail-gallery {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      overflow-x: auto;
-      padding: 10px;
-      max-width: 100%;
-    }
-
-    .modal-thumbnail {
-      width: 60px;
-      height: 100px;
-      border-radius: 5px;
-      cursor: pointer;
-      opacity: 0.6;
-      transition: opacity 0.3s ease;
-    }
-
-    .modal-thumbnail.active {
-      opacity: 1;
-      box-shadow: 0 0 0 2px var(--accent);
-    }
-
-    .modal-thumbnail:hover {
-      opacity: 0.8;
-    }
 
     footer {
       background-color: var(--primary-dark);
@@ -643,7 +502,6 @@
       font-size: 14px;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       header {
         padding: 60px 0 40px;
@@ -667,21 +525,6 @@
         width: 220px;
         height: 450px;
       }
-
-      .modal-prev,
-      .modal-next {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-      }
-
-      .modal-prev {
-        left: 10px;
-      }
-
-      .modal-next {
-        right: 10px;
-      }
     }
   </style>
 </head>
@@ -690,9 +533,8 @@
     <div class="container">
       <div class="header-content">
         <div class="profile-pic">
-  <img src="my photo.jpg" alt="Profile Picture">
-</div>
-
+          <img src="my photo.jpg" alt="Profile Picture">
+        </div>
         <h1>Mohamed Hamdy</h1>
         <div class="title-badge">Flutter Developer</div>
         <p class="header-bio">
@@ -701,21 +543,25 @@
         </p>
         <div class="social-links">
           <a href="mailto:MOHAMEDHAMDY192001@gmail.com" class="social-btn" title="Email">
+            <!-- Email Icon SVG -->
             <svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
               <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
             </svg>
           </a>
           <a href="https://github.com/MohamedHamdySoftwareEngineer" target="_blank" class="social-btn" title="GitHub">
+            <!-- GitHub Icon SVG -->
             <svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
             </svg>
           </a>
           <a href="https://www.linkedin.com/in/mohamed-hamdy-software-engineer" target="_blank" class="social-btn" title="LinkedIn">
+            <!-- LinkedIn Icon SVG -->
             <svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
             </svg>
           </a>
           <a href="https://wa.me/+201060469912" target="_blank" class="social-btn" title="WhatsApp">
+            <!-- WhatsApp Icon SVG -->
             <svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
               <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
             </svg>
@@ -749,57 +595,69 @@
           </div>
           
           <div class="app-preview">
-  <div class="phone-mockup">
-    <div class="phone-screen">
-      <!-- Replace with the actual image file stored in your repository -->
-      <img src="Examuiz/splash_screen.jpg" alt="Examuiz main screen" class="screen-content">
-    </div>
-  </div>
-</div>
+            <div class="phone-mockup">
+              <div class="phone-screen">
+                <!-- الصورة الرئيسية للـ Examuiz -->
+                <a href="Examuiz/splash_screen.jpg" data-lightbox="examuiz" data-title="Examuiz Main Screen">
+                  <img src="Examuiz/splash_screen.jpg" alt="Examuiz main screen" class="screen-content">
+                </a>
+              </div>
+            </div>
+          </div>
 
-<div class="app-screenshots">
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(1, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Login Screen -->
-    <img src="Examuiz/home_screen.jpg" alt="Login Screen">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(2, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Dashboard -->
-    <img src="Examuiz/generate_exam_screen.jpg" alt="Dashboard">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(3, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Exam Creation -->
-    <img src="Examuiz/exam_parameters.jpg" alt="Exam Creation">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(4, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Analytics -->
-    <img src="Examuiz/exam_opening.jpg" alt="Analytics">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(5, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Results -->
-    <img src="Examuiz/the_generated_exam.jpg" alt="Results">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(6, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Login Screen -->
-    <img src="Examuiz/exam_analysis_screen.jpg" alt="Login Screen1">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(7, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Dashboard -->
-    <img src="Examuiz/analysis_result_1.jpg" alt="Dashboard1">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(8, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Exam Creation -->
-    <img src="Examuiz/analysis_result_2.jpg" alt="Exam Creation1">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(9, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Analytics -->
-    <img src="Examuiz/analysis_result_3.jpg" alt="Analytics1">
-  </div>
-  <div class="screenshot-thumb" onclick="openModal();currentSlide(10, 'examuiz')">
-    <!-- Replace with the actual screenshot file for Results -->
-    <img src="Examuiz/analysis_result_4.jpg" alt="Results1">
-  </div>
-</div>
-
+          <div class="app-screenshots">
+            <!-- كل صورة يتم تغليفها داخل وسم <a> لتفعيل Lightbox -->
+            <div class="screenshot-thumb">
+              <a href="Examuiz/home_screen.jpg" data-lightbox="examuiz" data-title="Login Screen">
+                <img src="Examuiz/home_screen.jpg" alt="Login Screen">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/generate_exam_screen.jpg" data-lightbox="examuiz" data-title="Dashboard">
+                <img src="Examuiz/generate_exam_screen.jpg" alt="Dashboard">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/exam_parameters.jpg" data-lightbox="examuiz" data-title="Exam Creation">
+                <img src="Examuiz/exam_parameters.jpg" alt="Exam Creation">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/exam_opening.jpg" data-lightbox="examuiz" data-title="Analytics">
+                <img src="Examuiz/exam_opening.jpg" alt="Analytics">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/the_generated_exam.jpg" data-lightbox="examuiz" data-title="Results">
+                <img src="Examuiz/the_generated_exam.jpg" alt="Results">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/exam_analysis_screen.jpg" data-lightbox="examuiz" data-title="Login Screen 1">
+                <img src="Examuiz/exam_analysis_screen.jpg" alt="Login Screen1">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/analysis_result_1.jpg" data-lightbox="examuiz" data-title="Dashboard 1">
+                <img src="Examuiz/analysis_result_1.jpg" alt="Dashboard1">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/analysis_result_2.jpg" data-lightbox="examuiz" data-title="Exam Creation 1">
+                <img src="Examuiz/analysis_result_2.jpg" alt="Exam Creation1">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/analysis_result_3.jpg" data-lightbox="examuiz" data-title="Analytics 1">
+                <img src="Examuiz/analysis_result_3.jpg" alt="Analytics1">
+              </a>
+            </div>
+            <div class="screenshot-thumb">
+              <a href="Examuiz/analysis_result_4.jpg" data-lightbox="examuiz" data-title="Results 1">
+                <img src="Examuiz/analysis_result_4.jpg" alt="Results1">
+              </a>
+            </div>
+          </div>
           
           <div class="app-actions">
             <a href="https://github.com/MohamedHamdySoftwareEngineer" target="_blank" class="app-btn">
@@ -823,5 +681,8 @@
       </div>
     </section>
   </main>
+  
+  <!-- Lightbox2 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
