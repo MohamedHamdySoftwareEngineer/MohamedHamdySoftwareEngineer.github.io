@@ -432,6 +432,25 @@
       margin-bottom: 10px;
       color: var(--primary-dark);
     }
+    .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Important to clip the image within the circle */
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
 
     /* Modal for screenshots */
     .modal {
@@ -670,7 +689,10 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <div class="profile-pic">MH</div>
+        <div class="profile-pic">
+  <img src="my photo.jpg" alt="Profile Picture">
+</div>
+
         <h1>Mohamed Hamdy</h1>
         <div class="title-badge">Flutter Developer</div>
         <p class="header-bio">
