@@ -355,40 +355,40 @@
     }
 
     .screenshot-thumb {
-      flex: 0 0 auto;
-      width: 150px;
-      height: 300px;
-      border-radius: 12px;
-      overflow: hidden;
-      cursor: pointer;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      position: relative;
-      background: #333;
-      padding: 6px;
-    }
+  flex: 0 0 auto;
+  width: 150px;
+  height: 300px;
+  border-radius: 24px; /* زودنا الراديوس */
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  background: #333;
+  border: 6px solid #333; /* بدل الـ padding استخدمنا border */
+}
 
-    .screenshot-thumb::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: calc(100% - 12px);
-      height: calc(100% - 12px);
-      border-radius: 8px;
-      background: #fff;
-      z-index: 1;
-    }
+.screenshot-thumb::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* مش محتاجين ننقص من الأبعاد */
+  height: 100%;
+  border-radius: 18px; /* راديوس أقل من الإطار الخارجي */
+  background: #fff;
+  z-index: 1;
+}
 
-    .screenshot-thumb img {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 6px;
-    }
+.screenshot-thumb img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px; /* نفس راديوس الـ ::before */
+}
 
     .phone-mockup-small {
       width: 100%;
