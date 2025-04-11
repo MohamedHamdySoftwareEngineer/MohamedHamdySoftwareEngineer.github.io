@@ -358,14 +358,14 @@
   flex: 0 0 auto;
   width: 150px;
   height: 300px;
-  border-radius: 24px; /* Outer border radius */
+  border-radius: 24px; /* راديوس للإطار الخارجي */
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   position: relative;
   background: #333;
-  border: 6px solid #333; /* Border around the container */
+  border: 6px solid #333; /* الإطار الخارجي */
 }
 
 .screenshot-thumb::before {
@@ -374,9 +374,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%; /* The same size as the container */
+  width: 100%; /* نفس حجم الإطار */
   height: 100%;
-  border-radius: 18px; /* Smaller border radius inside the container */
+  border-radius: 18px; /* راديوس أصغر للإطار الداخلي */
   background: #fff;
   z-index: 1;
 }
@@ -387,7 +387,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 18px; /* Match the smaller radius from the ::before */
+  /* إزالة الـ border-radius من الصورة */
+  border-radius: 0; /* الصورة بدون راديوس */
 }
 
 
