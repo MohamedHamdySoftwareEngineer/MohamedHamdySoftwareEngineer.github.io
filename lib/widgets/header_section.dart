@@ -59,8 +59,8 @@ class HeaderSection extends StatelessWidget {
               const Text(
                 'Mohamed Hamdy',
                 style: TextStyle(
-                  fontSize: 42,
-                  fontWeight: FontWeight.w700,
+                  fontSize: 40,
+                  fontWeight: FontWeight.w600,
                   color: Colors.white,
                 ),
               ),

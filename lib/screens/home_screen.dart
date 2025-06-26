@@ -11,9 +11,40 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<AppModel> apps = [
       AppModel(
+        title: 'Education and Nutrition',
+        description: 'A graduation project mobile app for an advanced system for education and nutrition, designed to provide personalized educational content and nutritional guidance.',
+        techTags: ['Flutter', 'Dart', 'BLoC', 'REST API' , 'MVVM Pattern', 'Git','Github',],
+        mainImage: 'assets/images/EduNourish/splash_screen.jpg',
+        screenshots: [
+          'assets/images/EduNourish/Home Screen.png',
+          'assets/images/EduNourish/Student Screen.png',
+          'assets/images/EduNourish/Notifications.png',
+          'assets/images/EduNourish/Map.png',
+           'assets/images/EduNourish/Payment.png',
+          'assets/images/EduNourish/Restaurant.png',
+          'assets/images/EduNourish/Restaurant_Details.png',
+          'assets/images/EduNourish/Attendance.png',       
+        ],
+        githubUrl: 'https://github.com/MohamedHamdySoftwareEngineer/Education-Nourish_Parent-Interface',
+      ),
+      AppModel(
+        title: 'NovaEd',
+        description: 'An educational high school mobile app that is an intelligent tool that generates customized test questions, empowering educators to assess student learning with ease.',
+        techTags: ['Flutter', 'Dart', 'API Integration', 'MVVM Pattern','Cubit','Google Sign in', 'Git','Github'],
+        mainImage: 'assets/images/NovaEd/splash_screen.jpg',
+        screenshots: [
+          'assets/images/NovaEd/login_screen.jpg',
+          'assets/images/NovaEd/home_screen.jpg',
+          'assets/images/NovaEd/choice_screen.jpg',
+          'assets/images/NovaEd/quiz_screen.jpg',
+          'assets/images/NovaEd/profile_screen.jpg',
+        ],
+        githubUrl: 'https://github.com/MohamedHamdySoftwareEngineer/NovaEd',
+      ),
+      AppModel(
         title: 'Examuiz',
         description: 'A mobile app that uses artificial intelligence to help create personalized exams and analyze student performance.',
-        techTags: ['Flutter', 'Dart', 'AI Integration', 'REST API'],
+        techTags: ['Flutter', 'Dart', 'AI Integration', 'REST API', 'Git', 'Github'],
         mainImage: 'assets/images/Examuiz/splash_screen.jpg',
         screenshots: [
           'assets/images/Examuiz/home_screen.jpg',
@@ -28,20 +59,6 @@ class HomeScreen extends StatelessWidget {
           'assets/images/Examuiz/analysis_result_4.jpg',
         ],
         githubUrl: 'https://github.com/MohamedHamdySoftwareEngineer/Examuiz',
-      ),
-      AppModel(
-        title: 'NovaEd',
-        description: 'An educational high school mobile app that is an intelligent tool that generates customized test questions, empowering educators to assess student learning with ease.',
-        techTags: ['Flutter', 'Dart', 'API Integration', 'MVVM Pattern','Cubit','Google Sign in'],
-        mainImage: 'assets/images/NovaEd/splash_screen.jpg',
-        screenshots: [
-          'assets/images/NovaEd/login_screen.jpg',
-          'assets/images/NovaEd/home_screen.jpg',
-          'assets/images/NovaEd/choice_screen.jpg',
-          'assets/images/NovaEd/quiz_screen.jpg',
-          'assets/images/NovaEd/profile_screen.jpg',
-        ],
-        githubUrl: 'https://github.com/MohamedHamdySoftwareEngineer/NovaEd',
       ),
     ];
 
