@@ -61634,7 +61634,7 @@ A.j6.prototype={}
 A.Bm.prototype={
 P(a){var s,r=null,q=t.s,p=A.c([new A.j6("Examuiz","A mobile app that uses artificial intelligence to help create personalized exams and analyze student performance.",A.c(["Flutter","Dart","AI Integration","REST API"],q),"assets/images/Examuiz/splash_screen.jpg",A.c(["assets/images/Examuiz/home_screen.jpg","assets/images/Examuiz/generate_exam_screen.jpg","assets/images/Examuiz/exam_parameters.jpg","assets/images/Examuiz/exam_opening.jpg","assets/images/Examuiz/the_generated_exam.jpg","assets/images/Examuiz/exam_analysis_screen.jpg","assets/images/Examuiz/analysis_result_1.jpg","assets/images/Examuiz/analysis_result_2.jpg","assets/images/Examuiz/analysis_result_3.jpg","assets/images/Examuiz/analysis_result_4.jpg"],q),"https://github.com/MohamedHamdySoftwareEngineer/Examuiz"),new A.j6("NovaEd","An educational high school mobile app that is an intelligent tool that generates customized test questions, empowering educators to assess student learning with ease.",A.c(["Flutter","Dart","API Integration","MVVM Pattern","Cubit","Google Sign in"],q),"assets/images/NovaEd/splash_screen.jpg",A.c(["assets/images/NovaEd/login_screen.jpg","assets/images/NovaEd/home_screen.jpg","assets/images/NovaEd/choice_screen.jpg","assets/images/NovaEd/quiz_screen.jpg","assets/images/NovaEd/profile_screen.jpg"],q),"https://github.com/MohamedHamdySoftwareEngineer/NovaEd")],t.vR)
 q=t.V
-s=A.c([B.i2,A.qx(A.c([A.a0a("MY MOBILE APPLICATIONS",A.ot(r,r,B.bU,r,r,r,r,r,r,r,r,38,r,r,B.b2,r,r,!0,r,1,r,r,r,r,r,r)),B.i1,A.cF(r,r,r,new A.ck(r,r,r,A.fh(2),r,B.Ai,B.aa),4,r,r,80),B.i1,B.MH],q),B.aM),B.HL],q)
+s=A.c([B.i2,A.qx(A.c([A.a0a("MY MOBILE APPLICATIONS",A.ot(r,r,B.bU,r,r,r,r,r,r,r,r,38,r,r,B.b2,r,r,!0,r,1,r,r,r,r,r,r)),B.i1,A.cF(r,r,r,new A.ck(r,r,r,A.fh(2),r,B.Ai,B.aa),4,r,r,80),B.i1,B.MI],q),B.aM),B.HL],q)
 B.b.K(s,new A.ad(p,new A.RA(),t.eo))
 return new A.un(new A.Ev(A.qx(A.c([B.zj,new A.e9(B.bW,A.qx(s,B.aM),r)],q),B.aM),r),B.jh,r)}}
 A.RA.prototype={
@@ -61642,13 +61642,13 @@ $1(a){return new A.mG(a,null)},
 $S:398}
 A.mG.prototype={
 P(a){var s=this,r=null,q=A.fh(15),p=t.sq,o=A.c([new A.eL(0,B.ds,B.jl,B.pj,30)],p),n=s.c,m=n.c,l=A.W(m).h("ad<1,hY>"),k=t.V
-l=A.cF(A.qx(A.c([A.a0a(n.a,B.KL),B.uL,A.a0a(n.b,B.JF),B.i1,new A.Fs(8,8,A.Y(new A.ad(m,new A.Nh(),l),!0,l.h("ay.E")),r)],k),B.b_),r,r,B.vW,r,r,B.z0,r)
+l=A.cF(A.qx(A.c([A.a0a(n.a,B.KL),B.uL,A.a0a(n.b,B.JF),B.i1,new A.Fs(8,8,A.Y(new A.ad(m,new A.Nh(),l),!0,l.h("ay.E")),r)],k),B.b_),r,r,B.vW,r,r,B.z0,1/0)
 m=A.fh(36)
 p=A.c([new A.eL(0,B.ds,A.af(51,B.k.t()>>>16&255,B.k.t()>>>8&255,B.k.t()&255),B.Eb,35)],p)
 p=A.cF(A.kN(A.Bd(r,A.cF(A.ac5(A.fh(24),A.a9k(n.d,new A.Ni(),B.f8)),r,r,new A.ck(B.k,r,r,m,p,r,B.aa),550,r,B.yU,270),B.ac,!1,r,r,r,r,r,r,r,r,r,r,r,r,new A.Nj(s,a),r,r,r),r,r),B.xW,r,r,r,r,B.bW,r)
 n=n.e.length
 m=r
-return A.cF(A.qx(A.c([l,p,A.cF(new A.BW(new A.a_u(new A.Nk(s),n,!0,!0,!0,r),B.bW,B.bh,!1,r,r,m,!1,r,n,B.ac,B.FV,r,B.aj,B.aq,r),B.jh,r,r,340,r,r,r),new A.e9(B.bW,A.kN(A.alX(B.zB,B.MG,new A.Nl(s),A.alY(r,r,B.bT,r,r,r,r,r,r,r,r,r,B.yZ,r,new A.cJ(A.fh(25),B.t),r,r,r,r)),r,r),r)],k),B.b_),r,r,new A.ck(B.j,r,r,q,o,r,B.aa),r,B.yS,r,r)},
+return A.cF(A.qx(A.c([l,p,A.cF(new A.BW(new A.a_u(new A.Nk(s),n,!0,!0,!0,r),B.bW,B.bh,!1,r,r,m,!1,r,n,B.ac,B.FV,r,B.aj,B.aq,r),B.jh,r,r,340,r,r,r),new A.e9(B.bW,A.kN(A.alX(B.zB,B.MH,new A.Nl(s),A.alY(r,r,B.bT,r,r,r,r,r,r,r,r,r,B.yZ,r,new A.cJ(A.fh(25),B.t),r,r,r,r)),r,r),r)],k),B.b_),r,r,new A.ck(B.j,r,r,q,o,r,B.aa),r,B.yS,r,r)},
 Gf(a,b,c){var s,r,q,p={}
 p.a=c
 s=A.tz(a,!0).c
@@ -61728,7 +61728,7 @@ $0(){++this.a.a},
 $S:0}
 A.Bj.prototype={
 P(a){var s=null,r=A.abO(A.af(B.c.aj(76.5),B.j.t()>>>16&255,B.j.t()>>>8&255,B.j.t()&255),5),q=A.c([new A.eL(0,B.ds,A.af(51,B.k.t()>>>16&255,B.k.t()>>>8&255,B.k.t()&255),B.pj,20)],t.sq)
-return A.cF(A.aeA(new A.e9(B.bW,A.qx(A.c([B.i2,A.cF(new A.zQ(A.a9k("assets/images/my photo.jpg",new A.Rs(),B.f8),s),s,s,new A.ck(B.j,s,r,s,q,s,B.bP),150,s,s,150),B.uM,B.MK,B.uL,A.cF(B.MI,s,s,new A.ck(A.af(51,B.j.t()>>>16&255,B.j.t()>>>8&255,B.j.t()&255),s,s,A.fh(20),s,s,B.aa),s,s,B.yX,s),B.uM,B.Ey,B.HK,B.HR,B.i2],t.V),B.aM),s),!0),s,s,B.vX,s,s,s,s)}}
+return A.cF(A.aeA(new A.e9(B.bW,A.qx(A.c([B.i2,A.cF(new A.zQ(A.a9k("assets/images/my photo.jpg",new A.Rs(),B.f8),s),s,s,new A.ck(B.j,s,r,s,q,s,B.bP),150,s,s,150),B.uM,B.MK,B.uL,A.cF(B.MJ,s,s,new A.ck(A.af(51,B.j.t()>>>16&255,B.j.t()>>>8&255,B.j.t()&255),s,s,A.fh(20),s,s,B.aa),s,s,B.yX,s),B.uM,B.Ey,B.HK,B.HR,B.i2],t.V),B.aM),s),!0),s,s,B.vX,s,s,s,s)}}
 A.Rs.prototype={
 $3(a,b,c){return B.zC},
 $S:404}
@@ -66176,8 +66176,8 @@ B.Ew=new A.Cx(1,"landscape")
 B.Ex=new A.tG(null)
 B.yY=new A.aT(20,0,20,0)
 B.Lv=new A.j(!0,B.j,null,null,null,null,16,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.MJ=new A.iC("I\u2019m a Flutter developer skilled in building high-performance, scalable mobile apps with Dart and BLoC state management. I focus on clean architecture, responsive UIs, and seamless integration with",null,B.Lv,B.dd,null)
-B.Ey=new A.e9(B.yY,B.MJ,null)
+B.MG=new A.iC("I\u2019m a Flutter developer skilled in building high-performance, scalable mobile apps with Dart and BLoC state management. I focus on clean architecture, responsive UIs, and seamless integration",null,B.Lv,B.dd,null)
+B.Ey=new A.e9(B.yY,B.MG,null)
 B.c7=new A.CD(0,"fill")
 B.aG=new A.CD(1,"stroke")
 B.Ez=new A.jI(1/0)
@@ -66786,11 +66786,11 @@ B.LO=new A.j(!0,B.k,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.IN=new A.j(!0,B.k,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.MF=new A.cK(B.Kt,B.Jt,B.Ku,B.L2,B.J7,B.Je,B.JQ,B.KQ,B.K4,B.Lz,B.ID,B.IY,B.Lu,B.LO,B.IN)
 B.JE=new A.j(!0,B.j,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.MG=new A.iC("View Code",null,B.JE,null,null)
+B.MH=new A.iC("View Code",null,B.JE,null,null)
 B.JA=new A.j(!0,B.bn,null,null,null,null,18,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.MH=new A.iC("A showcase of my latest and most significant Flutter applications, demonstrating my skills in mobile development.",null,B.JA,B.dd,null)
+B.MI=new A.iC("A showcase of my latest and most significant Flutter applications, demonstrating my skills in mobile development.",null,B.JA,B.dd,null)
 B.LG=new A.j(!0,B.j,null,null,null,null,null,B.F,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.MI=new A.iC("Software Engineer | Flutter Developer",null,B.LG,null,null)
+B.MJ=new A.iC("Software Engineer | Flutter Developer",null,B.LG,null,null)
 B.It=new A.j(!0,B.j,null,null,null,null,42,B.b2,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.MK=new A.iC("Mohamed Hamdy",null,B.It,null,null)
 B.P0=new A.a0H(0,"system")

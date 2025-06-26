@@ -1,0 +1,6 @@
+before you push 
+
+flutter build web
+xcopy /E /Y /I build\web\* .\
+
+then commit and push
