@@ -32,6 +32,7 @@ class AppShowcase extends StatelessWidget {
         children: [
           // App Header
           Container(
+            width: double.infinity,
             padding: const EdgeInsets.all(25),
             decoration: const BoxDecoration(
               gradient: LinearGradient(

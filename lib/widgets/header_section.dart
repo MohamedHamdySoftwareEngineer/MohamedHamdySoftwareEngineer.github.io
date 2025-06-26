@@ -86,7 +86,7 @@ class HeaderSection extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
                   'I’m a Flutter developer skilled in building high-performance, scalable mobile apps with Dart and BLoC state management.'
-                  ' I focus on clean architecture, responsive UIs, and seamless integration with',
+                  ' I focus on clean architecture, responsive UIs, and seamless integration',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
