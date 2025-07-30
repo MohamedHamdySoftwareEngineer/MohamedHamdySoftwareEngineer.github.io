@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
       AppModel(
         title: 'Flutter Restaurant',
         description: 'Flutter Restaurant App - A mobile restaurant app with Firebase authentication, dynamic menu display from Firestore, and shopping cart functionality. Features include form validation, real-time data retrieval from Firestore, and a user-friendly interface.',
-        techTags: ['Flutter', 'Dart', 'Firebase ', 'Auth','Firestore','Google Sign in', 'Git','Github'],
+        techTags: ['Flutter', 'Dart', 'Firebase', 'Auth','Firestore','Git','Github'],
         mainImage: 'assets/images/Restaurant/SplashScreen.png',
         screenshots: [
           'assets/images/Restaurant/Login Page.png',
