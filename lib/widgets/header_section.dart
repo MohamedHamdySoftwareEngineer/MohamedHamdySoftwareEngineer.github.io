@@ -73,7 +73,7 @@ class HeaderSection extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Text(
-                  'Software Engineer | Flutter Developer',
+                  'Cross Platform Flutter Developer',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w500,

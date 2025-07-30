@@ -10,9 +10,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<AppModel> apps = [
+      
       AppModel(
         title: 'Education and Nutrition',
-        description: 'A graduation project mobile app for an advanced system for education and nutrition, designed to provide personalized educational content and nutritional guidance.',
+        description: 'A graduation project mobile app for an advanced system for education and nutrition, '
+        'designed to provide personalized educational content and nutritional guidance. '
+        'Contains features: \n'
+        '- record attendance of students, also their grades and class schedule, \n'
+        '- payment screen to proceed with the payment on the Stripe website, \n' 
+        '- notifications screen integrated with Socket, Food Place screen to show food in the school, \n' 
+        '- integrate map using Flutter Map, exam screen to list all exams for the student.',
         techTags: ['Flutter', 'Dart', 'BLoC', 'REST API' , 'MVVM Pattern', 'Git','Github',],
         mainImage: 'assets/images/EduNourish/splash_screen.jpg',
         screenshots: [
@@ -20,12 +27,25 @@ class HomeScreen extends StatelessWidget {
           'assets/images/EduNourish/Student Screen.png',
           'assets/images/EduNourish/Notifications.png',
           'assets/images/EduNourish/Map.png',
-           'assets/images/EduNourish/Payment.png',
+          'assets/images/EduNourish/Payment.png',
           'assets/images/EduNourish/Restaurant.png',
           'assets/images/EduNourish/Restaurant_Details.png',
           'assets/images/EduNourish/Attendance.png',       
         ],
         githubUrl: 'https://github.com/MohamedHamdySoftwareEngineer/Education-Nourish_Parent-Interface',
+      ),
+      AppModel(
+        title: 'Flutter Restaurant',
+        description: 'Flutter Restaurant App - A mobile restaurant app with Firebase authentication, dynamic menu display from Firestore, and shopping cart functionality. Features include form validation, real-time data retrieval from Firestore, and a user-friendly interface.',
+        techTags: ['Flutter', 'Dart', 'Firebase ', 'Auth','Firestore','Google Sign in', 'Git','Github'],
+        mainImage: 'assets/images/Restaurant/SplashScreen.png',
+        screenshots: [
+          'assets/images/Restaurant/Login Page.png',
+          'assets/images/Restaurant/Menu Page.png',
+          'assets/images/Restaurant/Cart Page1.png',
+          'assets/images/Restaurant/Cart Page2.png',
+        ],
+        githubUrl: 'https://github.com/MohamedHamdySoftwareEngineer/Restaurant-App',
       ),
       AppModel(
         title: 'NovaEd',
