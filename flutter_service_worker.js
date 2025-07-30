@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "5c04bd4c13245995de1af235870045e0",
-"assets/AssetManifest.bin.json": "263f04ac065a611de987a4d2e5e90091",
-"assets/AssetManifest.json": "9c6cebec4497df4a40f1849925a0967d",
+const RESOURCES = {"assets/AssetManifest.bin": "9ec8dbd8e298f08dcf9806cef3a4f8bc",
+"assets/AssetManifest.bin.json": "860c52539cc8037481e2b7c27a4d776e",
+"assets/AssetManifest.json": "1a446e2ddf25449fdc2c424865742b20",
 "assets/assets/images/EduNourish/Attendance.png": "b82a92a55efa15c55db2273a5de3b061",
 "assets/assets/images/EduNourish/Home%2520Screen.png": "27b09c023ad70c54a3b0e5a4fd54c6fb",
 "assets/assets/images/EduNourish/Map.png": "26c6874023787825a6084ffa9a62d148",
@@ -33,6 +33,11 @@ const RESOURCES = {"assets/AssetManifest.bin": "5c04bd4c13245995de1af235870045e0
 "assets/assets/images/NovaEd/profile_screen.jpg": "413824237b2ac1b1782450f55e36d47b",
 "assets/assets/images/NovaEd/quiz_screen.jpg": "fc0c5fbfa89f501b51ee4f7d6e4159d4",
 "assets/assets/images/NovaEd/splash_screen.jpg": "50db2f252878f592e4c491b43c76bc0c",
+"assets/assets/images/Restaurant/Cart%2520Page1.png": "c061419779828545c3c4f3b8d8cd99a4",
+"assets/assets/images/Restaurant/Cart%2520Page2.png": "3785de3d1355e9d8d06d07e23447778a",
+"assets/assets/images/Restaurant/Login%2520Page.png": "e26837345e99def08d9aec21e8432186",
+"assets/assets/images/Restaurant/Menu%2520Page.png": "2c856214ab2e3ad3f813f08a46cb20ef",
+"assets/assets/images/Restaurant/SplashScreen.png": "ee1554575e3cedcba7500fb30d69ba54",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "77ab7a928d747fd22c1d95fe97bba2af",
 "assets/NOTICES": "038a7442711a96f1b8ec41b97eae1b2f",
@@ -55,7 +60,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "5c04bd4c13245995de1af235870045e0
 "canvaskit/skwasm_st.wasm": "56c3973560dfcbf28ce47cebe40f3206",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "76f08d47ff9f5715220992f993002504",
-"flutter_bootstrap.js": "bd1ac42d65d7dd9724e071d3b92ed66b",
+"flutter_bootstrap.js": "fb2934c4bb789bc46985626952492592",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
