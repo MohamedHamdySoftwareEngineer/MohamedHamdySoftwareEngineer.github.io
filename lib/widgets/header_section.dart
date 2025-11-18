@@ -7,7 +7,7 @@ class HeaderSection extends StatelessWidget {
   const HeaderSection({super.key});
 
   Future<void> _downloadCV() async { 
-    const cvUrl = 'https://drive.google.com/file/d/1axmseIndXjPW_fiSKQosACurOq4QMisE/view?usp=drive_link';
+    const cvUrl = 'https://drive.google.com/file/d/10ecl45J1aC6ZUV8VAcmmxeEL71wGuC_0/view?usp=drive_link';
                    
     final Uri url = Uri.parse(cvUrl);
     
