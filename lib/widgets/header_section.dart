@@ -158,26 +158,14 @@ class HeaderSection extends StatelessWidget {
                       horizontal: 35,
                       vertical: 14,
                     ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                     
-                        const Text(
-                          'Download CV',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.primary,
-                            letterSpacing: 0.5,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        Icon(
-                          Icons.arrow_forward_rounded,
-                          color: AppColors.primary.withOpacity(0.7),
-                          size: 20,
-                        ),
-                      ],
+                    child: const Text(
+                      'Download CV',
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.primary,
+                        letterSpacing: 0.5,
+                      ),
                     ),
                   ),
                 ),
