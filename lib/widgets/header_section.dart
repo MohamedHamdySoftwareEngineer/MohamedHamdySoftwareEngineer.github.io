@@ -109,9 +109,9 @@ class HeaderSection extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
-              // Download CV Button
-              downloadCVButton(),
-              const SizedBox(height: 30),
+              // // Download CV Button
+              // downloadCVButton(),
+              // const SizedBox(height: 30),
               // Social Links
               const SocialLinks(),
               const SizedBox(height: 40),
